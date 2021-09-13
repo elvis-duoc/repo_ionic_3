@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recuperar Clave</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding ion-text-center">
+  <div class="logo">
+    <img
+      src="https://colegiocarlosoviedo.cl/wp-content/uploads/2020/04/logo_normal.png"
+      alt=""
+    />
+  </div>
+  <div>
+    <ion-title>Recuperar Contraseña</ion-title>
+    <p></p>
+    <p>
+      Introduce tu dirección de correo electrónico y te enviaremos un enlace
+      para restablecer tu contraseña
+    </p>
+  </div>
+  <div class="form">
+    <ion-item lines="none">
+      <ion-input [(ngModel)]="email" placeholder="Ingrese Email"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="showAlert()" color="dark" expand="block"
+      >Crear Cuenta</ion-button
+    >
+  </div>
+</ion-content>

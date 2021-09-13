@@ -11,6 +11,28 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'registrarse',
+    loadChildren: () => import('./registrarse/registrarse.module').then( m => m.RegistrarsePageModule)
+  },
+  {
+    path: 'cuentacreada',
+    loadChildren: () => import('./cuentacreada/cuentacreada.module').then( m => m.CuentacreadaPageModule)
+  },
+  {
+    path: 'acceso',
+    loadChildren: () => import('./acceso/acceso.module').then( m => m.AccesoPageModule)
+  },
+  {
+    path: 'olvidarclave',
+    loadChildren: () => import('./olvidarclave/olvidarclave.module').then( m => m.OlvidarclavePageModule)
+  },
+
+
 ];
 
 @NgModule({
