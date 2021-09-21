@@ -7,18 +7,11 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./acceso.page.scss'],
 })
 export class AccesoPage{
-
+  mostrarImagen = false;
   constructor(public alertCtrl: AlertController) { }
 
-  async showAlert() {  
-    const alert = await this.alertCtrl.create({  
-      header: 'Error',  
-      subHeader: '',  
-      message: 'Cámara no compatible con la aplicación',  
-      buttons: ['Cerrar']  
-    });  
-    await alert.present();  
-    const result = await alert.onDidDismiss();  
-    console.log(result);  
-  }  
+
+  displayImage() {
+    this.mostrarImagen = !this.mostrarImagen;
+  }
 }

@@ -30,7 +30,19 @@ const routes: Routes = [
   {
     path: 'olvidarclave',
     loadChildren: () => import('./olvidarclave/olvidarclave.module').then( m => m.OlvidarclavePageModule)
+  },  {
+    path: 'dual',
+    loadChildren: () => import('./dual/dual.module').then( m => m.DualPageModule)
   },
+  {
+    path: 'estudiante',
+    loadChildren: () => import('./estudiante/estudiante.module').then( m => m.EstudiantePageModule)
+  },
+  {
+    path: 'secciones',
+    loadChildren: () => import('./secciones/secciones.module').then( m => m.SeccionesPageModule)
+  },
+
 
 
 ];
