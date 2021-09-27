@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { LoadingController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
+  selector: 'app-loginalumno',
+  templateUrl: './loginalumno.page.html',
+  styleUrls: ['./loginalumno.page.scss'],
 })
-export class LoginPage {
-  public email:any;
-  public password:any;
-  
+export class LoginalumnoPage {
 
   constructor(
     public loadingController: LoadingController
@@ -22,9 +19,10 @@ export class LoginPage {
   async presentLoadingWithOptions() {
     const loading = await this.loadingController.create({
       duration: 5000,
-      message: 'Buscando Secciones...',
+      message: 'Buscando Asignaturas...',
     });
     await loading.present();
 
   }
+
 }

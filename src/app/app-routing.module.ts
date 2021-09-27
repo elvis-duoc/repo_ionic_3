@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'splash',
     pathMatch: 'full'
   },
   {
@@ -30,7 +30,8 @@ const routes: Routes = [
   {
     path: 'olvidarclave',
     loadChildren: () => import('./olvidarclave/olvidarclave.module').then( m => m.OlvidarclavePageModule)
-  },  {
+  },
+  {
     path: 'dual',
     loadChildren: () => import('./dual/dual.module').then( m => m.DualPageModule)
   },
@@ -42,6 +43,22 @@ const routes: Routes = [
     path: 'secciones',
     loadChildren: () => import('./secciones/secciones.module').then( m => m.SeccionesPageModule)
   },
+  {
+    path: 'splash',
+    loadChildren: () => import('./splash/splash.module').then( m => m.SplashPageModule)
+  },  {
+    path: 'accesoalumno',
+    loadChildren: () => import('./accesoalumno/accesoalumno.module').then( m => m.AccesoalumnoPageModule)
+  },
+  {
+    path: 'loginalumno',
+    loadChildren: () => import('./loginalumno/loginalumno.module').then( m => m.LoginalumnoPageModule)
+  },
+  {
+    path: 'asignaturas',
+    loadChildren: () => import('./asignaturas/asignaturas.module').then( m => m.AsignaturasPageModule)
+  },
+
 
 
 
